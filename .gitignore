@@ -218,3 +218,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Server Health Bot secrets
+.env
+.env.*
+!.env.example
+*.pem
+id_rsa
+id_ed25519
+server-lab-key
+__pycache__/
