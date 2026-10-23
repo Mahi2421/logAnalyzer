@@ -1,0 +1,28 @@
+
+services:
+  web-01:
+    build:
+      context: .
+      dockerfile: web/Dockerfile
+    container_name: web-01
+    hostname: web-01
+    ports:
+      - "2221:22"
+
+  db-01:
+    build:
+      context: .
+      dockerfile: db/Dockerfile
+    container_name: db-01
+    hostname: db-01
+    ports:
+      - "2222:22"
+
+  app-01:
+    build:
+      context: .
+      dockerfile: app/Dockerfile
+    container_name: app-01
+    hostname: app-01
+    ports:
+      - "2223:22"

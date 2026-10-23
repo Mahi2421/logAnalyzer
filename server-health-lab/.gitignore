@@ -1,0 +1,16 @@
+# Secrets
+.env
+ssh/*key
+
+# Python virtual environment
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local environment files
+.env.*
+!.env.example
+
+# Private SSH keys
+id_*
+*.pem
